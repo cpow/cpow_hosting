@@ -1,0 +1,90 @@
+body {
+	font-family: arial;
+	background: #ebe9e1;
+	color: #4d4e50;
+	margin: auto;
+	text-align: center;
+	min-width: 500px;
+	height: 100%;
+}
+textarea {
+	font-family: arial;
+	color: #4d4e50;
+	font-size: 12pt;
+	width: 80%;	
+}
+#header {
+    font-size: 24pt;
+    background: #261F1A;
+    color: #E5ECF9;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-decoration: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#content {
+	font-size: 14pt;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	position: relative;
+}
+#content a:link, #content a:visited {
+	color: #3366CC;
+	border: none;
+}
+#content a:link, #content a:active {
+	color: #3366CC;
+	border: none;
+}
+#thumbnails {
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+}
+#thumbnail_container {
+    float: left;
+    position: relative;
+    background: white;
+    padding: 20px;
+    padding-bottom: 80px; 
+    min-width: 600px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+#pagination {
+    position: absolute;
+    bottom: 10px;
+}
+img {
+    border: 1px solid #3366CC;
+}
+h1 {
+	font-size: 24pt;
+	color: #3366CC;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+input[type="submit"] {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    background: #E5ECF9;
+	border: 1px solid #3366CC;
+	color: #4d4e50;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 20px 8px;
+}
+fieldset {
+	width: 150px;
+	background: #e1e1e1;
+}
+legend {
+    font-size: 12pt;
+	background: #E5ECF9;
+	padding: .25em;
+	color: #4d4e50;
+	border: 1px solid #3366CC;
+}

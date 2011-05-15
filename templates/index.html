@@ -1,0 +1,37 @@
+<html>
+	<head>
+ 		<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+	</head>
+	<body>
+	    <div id="header">
+                _HOST
+           <form action="/upload" enctype="multipart/form-data" method="post" style="float:right;">
+	            <div><input type="file" name="img"/></div>
+	            <div><input type="submit" value="Upload Image"></div>
+           	</div>
+	        <div id="content">	
+			
+			<div id="thumbnail_container">
+		    {% for image in images %}
+		        <div id="thumbnails">
+			        {{ image.date.date }}<br />
+			            <a href="img?img_id={{ image.key }}"><img src="img_thumb?img_id={{ image.key }}"></img></a><br />
+			            User: {{ image.author }}<br />
+			            <a href="delete?del_id={{ image.key }}">Delete</a>
+			    </div>
+		    {% endfor %}
+		    <div id="pagination">
+		    <a href="/page1"> first</a>
+		    {% for i in pages %}
+				{% ifequal i page %}
+				    {{ i }}
+			    {% else %}
+				    <a href="/page{{ i }}">{{ i }}</a>
+				{% endifequal %}
+			{% endfor %}
+			<a href="/page{{ page_max }}"> last</a>	
+			</div>
+		    </div>	    
+		    </div>
+	</body>
+</html>
